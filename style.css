@@ -45,7 +45,6 @@ nav {
   cursor: pointer;
   margin-left: 30px;
 }
-
 header ul {
   display: flex;
   align-items: center;
@@ -166,6 +165,39 @@ header ul li {
   text-align: justify;
   max-width: 650px;
   margin: 0 auto;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+#contact label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+#contact input[type="text"],
+input[type="email"] {
+  padding: 0.7rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  max-width: 30rem;
+  margin-bottom: 5px;
+  font-size: 17px;
+  background: rgba(229, 229, 229, 0.938);
+}
+#contact textarea {
+  max-width: 38rem;
+  padding: 0.5rem 0.8rem;
+  background-color: rgba(229, 229, 229, 0.938);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#contact form button {
+  margin: 1rem 0;
+  width: 10rem;
+  font-size: 16px;
 }
 #contact h1 {
   max-width: 130px;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@300;400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -39,9 +39,9 @@ nav {
   border: none;
   color: #fff;
   background-color: #eb984e;
-  font-family: "Baloo 2", cursive;
+  font-family: "Dosis", sans-serif;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
   margin-left: 30px;
 }
@@ -58,7 +58,7 @@ header ul li {
 
 .hero-img {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .title {
@@ -85,17 +85,20 @@ header ul li {
   /* margin: 10px 13rem; */
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
 }
 
 #intro p {
   max-width: 400px;
-  font-size: 17px;
+  font-size: 20px;
   margin: 10px 0;
   text-align: center;
   /* margin-left: 13rem; */
-  font-family: "Baloo 2", cursive;
-  text-align: justify;
-  letter-spacing: 1px;
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-style: italic;
+  /* font-weight: bold; */
 }
 
 #intro img {
@@ -119,17 +122,31 @@ header ul li {
   margin-top: 20px;
   border-bottom: 4px solid rgb(238, 255, 0);
 }
-
 #about p {
-  /* font-weight: lighter; */
   margin-top: 10px;
   /* padding: 0 3rem; */
-  margin-bottom: 20px;
-  font-size: 17px;
-  letter-spacing: 1px;
-  font-family: "Baloo 2", cursive;
+  /* margin-bottom: 10px; */
+  font-size: 20px;
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+  font-family: "Dosis", sans-serif;
 }
-
+#about ul {
+  margin: 2rem 0;
+}
+#about ul li {
+  display: flex;
+  align-items: center;
+}
+#about ul li a {
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-style: italic;
+}
+#about ul li img {
+  width: 40px;
+  margin-top: 10px;
+}
 #stack {
   text-align: justify;
   max-width: 650px;
@@ -157,9 +174,11 @@ header ul li {
 }
 #stack p {
   margin: 15px 0;
-  font-size: 17px;
+  font-size: 20px;
   letter-spacing: 1px;
-  font-family: "Baloo 2", cursive;
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+  font-family: "Dosis", sans-serif;
 }
 #contact {
   text-align: justify;
@@ -184,15 +203,17 @@ input[type="email"] {
   margin-bottom: 5px;
   font-size: 17px;
   background: rgba(229, 229, 229, 0.938);
+  font-family: "Dosis", sans-serif;
 }
 #contact textarea {
   max-width: 38rem;
-  padding: 0.5rem 0.8rem;
+  padding: 0.8rem 1rem;
   background-color: rgba(229, 229, 229, 0.938);
   border: none;
   outline: none;
   font-size: 16px;
   border-radius: 5px;
+  font-family: "Dosis", sans-serif;
 }
 #contact form button {
   margin: 1rem 0;
@@ -206,19 +227,21 @@ input[type="email"] {
   margin-bottom: 20px;
   border-bottom: 4px solid rgb(238, 255, 0);
 }
-#contact ul li {
+/* #contact ul li {
   display: flex;
   align-items: center;
-}
-#contact img {
+} */
+/* #contact img {
   width: 45px;
   margin-top: 10px;
-}
-#contact li a {
+} */
+/* #contact li a {
   font-size: 20px;
-}
+} */
 footer {
   text-align: center;
   margin: 50px 0;
   font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-style: italic;
 }

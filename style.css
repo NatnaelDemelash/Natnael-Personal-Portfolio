@@ -71,13 +71,17 @@ header ul li .active {
     margin-top: 5rem;
 }
 
+.hero-img img {
+    width: 400px;
+}
+
 .section-heading {
     margin-bottom: 20px;
     border-bottom: 4px solid var(--secondary-color);
 }
 
 .title {
-    background: #4f91bce6;
+    background: #f16555c2;
     color: #fff;
     font-weight: bold;
     text-align: center;
@@ -186,12 +190,14 @@ header ul li .active {
 
 #stack ul li {
     max-width: 700px;
-    margin: 0 auto;
     text-align: center;
 }
 
 #stack ul img {
-    width: 50px;
+    width: 65px;
+    border-radius: 4px;
+    padding: 10px;
+    background: rgba(229, 229, 229, 0.938);
 }
 
 #stack p {

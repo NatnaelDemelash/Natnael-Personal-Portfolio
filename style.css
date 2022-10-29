@@ -1,247 +1,427 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@300;400&display=swap");
+:root {
+    --secondary-color: #EC7063;
+}
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
-  background: #a9cce3;
-  font-family: "Abel", sans-serif;
+    background: #a9cce3;
+    font-family: "Abel", sans-serif;
 }
 
 img {
-  width: 170px;
+    width: 170px;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 a {
-  text-decoration: none;
-  color: #111;
+    text-decoration: none;
+    color: #111;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .btn {
-  padding: 0.5rem 1.4rem;
-  border: none;
-  color: #fff;
-  background-color: #eb984e;
-  font-family: "Dosis", sans-serif;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: 30px;
+    padding: 0.5rem 1.4rem;
+    border: none;
+    color: #fff;
+    background-color: var(--secondary-color);
+    font-family: "Dosis", sans-serif;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 30px;
 }
+
 header ul {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 header ul li {
-  margin: 0 25px;
-  font-weight: bold;
-  font-size: 18px;
+    margin: 0 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header ul li:hover,
+header ul li .active {
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .hero-img {
-  text-align: center;
-  margin-top: 5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--secondary-color);
 }
 
 .title {
-  background: #4f91bce6;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
+    background: #4f91bce6;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 #intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 3rem;
 }
 
 #intro h1 {
-  /* margin: 10px 13rem; */
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
+    /* margin: 10px 13rem; */
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
 }
 
 #intro p {
-  max-width: 400px;
-  font-size: 20px;
-  margin: 10px 0;
-  text-align: center;
-  /* margin-left: 13rem; */
-  font-family: "Dosis", sans-serif;
-  text-align: center;
-  letter-spacing: 1.5px;
-  font-style: italic;
-  /* font-weight: bold; */
+    max-width: 400px;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    /* margin-left: 13rem; */
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-style: italic;
+    /* font-weight: bold; */
 }
 
 #intro img {
-  width: 180px;
-  /* margin-right: 12rem; */
-  margin-top: 2rem;
-  border: 4px solid #fff;
-  border-radius: 50%;
+    width: 210px;
+    /* margin-right: 12rem; */
+    margin-top: 2rem;
+    border: 4px solid #fff;
+    border-radius: 50%;
 }
 
 #about {
-  text-align: justify;
-  max-width: 650px;
-  margin: 0 auto;
+    text-align: justify;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 #about h1 {
-  max-width: 100px;
-  font-size: 28px;
-  font-weight: bolder;
-  margin-top: 20px;
-  border-bottom: 4px solid rgb(238, 255, 0);
+    max-width: 100px;
+    font-size: 28px;
+    font-weight: bolder;
 }
+
 #about p {
-  margin-top: 10px;
-  /* padding: 0 3rem; */
-  /* margin-bottom: 10px; */
-  font-size: 20px;
-  line-height: 2rem;
-  letter-spacing: 1.5px;
-  font-family: "Dosis", sans-serif;
+    margin-top: 10px;
+    /* padding: 0 3rem; */
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+    font-family: "Dosis", sans-serif;
 }
+
 #about ul {
-  margin: 2rem 0;
+    margin: 2rem 0;
 }
+
 #about ul li {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
+
 #about ul li a {
-  font-size: 20px;
-  font-family: "Dosis", sans-serif;
-  font-style: italic;
+    font-size: 20px;
+    font-family: "Dosis", sans-serif;
+    font-style: italic;
 }
+
 #about ul li img {
-  width: 40px;
-  margin-top: 10px;
+    width: 40px;
+    margin-top: 10px;
 }
+
 #stack {
-  text-align: justify;
-  max-width: 650px;
-  margin: 0 auto;
+    text-align: justify;
+    max-width: 650px;
+    margin: 0 auto;
 }
+
 #stack h1 {
-  max-width: 120px;
-  font-size: 28px;
-  font-weight: bolder;
-  margin-top: 20px;
-  border-bottom: 4px solid rgb(238, 255, 0);
+    max-width: 120px;
+    font-size: 28px;
+    font-weight: bolder;
 }
+
 #stack ul {
-  display: grid;
-  grid-template-columns: repeat(5, 70px);
-  margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    margin-bottom: 40px;
 }
+
 #stack ul li {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
+
 #stack ul img {
-  width: 50px;
+    width: 50px;
 }
+
 #stack p {
-  margin: 15px 0;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 2rem;
-  letter-spacing: 1.5px;
-  font-family: "Dosis", sans-serif;
+    margin: 15px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+    font-family: "Dosis", sans-serif;
 }
+
 #contact {
-  text-align: justify;
-  max-width: 650px;
-  margin: 0 auto;
+    text-align: justify;
+    max-width: 650px;
+    margin: 0 auto;
 }
+
 #contact form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 #contact label {
-  font-weight: bold;
-  margin-bottom: 4px;
+    font-weight: bold;
+    margin-bottom: 4px;
 }
+
 #contact input[type="text"],
 input[type="email"] {
-  padding: 0.7rem 2rem;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  max-width: 30rem;
-  margin-bottom: 5px;
-  font-size: 17px;
-  background: rgba(229, 229, 229, 0.938);
-  font-family: "Dosis", sans-serif;
+    padding: 0.7rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    max-width: 30rem;
+    margin-bottom: 5px;
+    font-size: 17px;
+    background: rgba(229, 229, 229, 0.938);
+    font-family: "Dosis", sans-serif;
 }
+
 #contact textarea {
-  max-width: 38rem;
-  padding: 0.8rem 1rem;
-  background-color: rgba(229, 229, 229, 0.938);
-  border: none;
-  outline: none;
-  font-size: 16px;
-  border-radius: 5px;
-  font-family: "Dosis", sans-serif;
+    max-width: 38rem;
+    padding: 0.8rem 1rem;
+    background-color: rgba(229, 229, 229, 0.938);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: "Dosis", sans-serif;
 }
+
 #contact form button {
-  margin: 1rem 0;
-  width: 10rem;
-  font-size: 16px;
+    margin: 1rem 0;
+    width: 10rem;
+    font-size: 16px;
 }
+
 #contact h1 {
-  max-width: 130px;
-  font-size: 28px;
-  font-weight: bolder;
-  margin-bottom: 20px;
-  border-bottom: 4px solid rgb(238, 255, 0);
+    max-width: 130px;
+    font-size: 28px;
+    font-weight: bolder;
 }
+
+
 /* #contact ul li {
   display: flex;
   align-items: center;
 } */
+
+
 /* #contact img {
   width: 45px;
   margin-top: 10px;
 } */
+
+
 /* #contact li a {
   font-size: 20px;
 } */
+
+
+/* Projects Section */
+
+#projects {
+    padding: 7rem 0;
+}
+
+#projects h1 {
+    max-width: 120px;
+    margin: 0 auto;
+    font-size: 38px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+#projects .btn {
+    width: 200px;
+}
+
+#projects .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    /* gap: 2rem; */
+}
+
+#projects .item:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+#projects .item .left {
+    flex: 1;
+}
+
+#projects .item .right {
+    margin-left: -150px;
+    flex: 1;
+    background-color: #fff;
+    padding: 3rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #00000028;
+    z-index: 2;
+}
+
+#projects img {
+    width: 500px;
+}
+
+#projects .item:nth-of-type(even) .right {
+    margin-left: 0;
+}
+
+#projects .item:nth-of-type(even) .left {
+    margin-left: -150px;
+}
+
+#projects .item .left .img {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 20px #4705fc33; */
+    position: relative;
+}
+
+#projects .item .left .img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: #5a24ed38; */
+}
+
+#projects .item .left .img img {
+    object-fit: cover;
+    transition: 0.3s ease transform;
+}
+
+#projects .item:hover .left .img img {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+#projects .item .right .project-title {
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    margin-bottom: 1rem;
+}
+
+#projects .item .right .project-sub-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+#projects .item .right .project-desc {
+    color: var(--secondary-gray);
+    margin-bottom: 3rem;
+}
+
+#projects .item .right .external-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: calc(0.6em - 4px) calc(1.6em - 4px);
+}
+
+#projects .item .right .external-link svg {
+    width: 25px;
+}
+
 footer {
-  text-align: center;
-  margin: 50px 0;
-  font-size: 20px;
-  font-family: "Dosis", sans-serif;
-  font-style: italic;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 20px;
+    font-family: "Dosis", sans-serif;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+    #projects {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #projects .item {
+        flex-direction: column;
+        text-align: center;
+    }
+    #projects a img {
+        width: 300px;
+    }
+    #projects .item .left {
+        width: 100%;
+        text-align: center;
+        padding-left: 2rem;
+    }
+    #projects .item .right {
+        margin-left: 0;
+        width: 90%;
+        margin-top: -150px;
+    }
+    #projects .item:nth-of-type(even) {
+        flex-direction: column;
+    }
+    #projects .item:nth-of-type(even) .left {
+        margin-left: 0;
+    }
 }

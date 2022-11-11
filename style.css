@@ -23,6 +23,10 @@ img {
     margin: 0 auto;
 }
 
+.branding {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     color: #111;
@@ -393,6 +397,15 @@ input[type="email"] {
 
 #projects .item .right .external-link svg {
     width: 25px;
+}
+
+#blogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15rem;
+    flex-direction: column;
 }
 
 footer {
